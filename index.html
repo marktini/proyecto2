@@ -7,11 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenido a mi página web</h1>
-        <p id="texto">Este es un pájaro de texto en una página simple hecha con HTML, CSS y JavaScript.</p>
-        <button onclick="cambiarTexto()">Cambiar Texto</button>
-    </div>
+        <div class="container">
+            <h1>Bienvenido a mi página web</h1>
+            <p id="texto">Este es un párrafo de texto en una página simple hecha con HTML, CSS y JavaScript.</p>
+            <button onclick="cambiarTexto()">Cambiar Texto</button>
+
+            <!-- Sección del Blog -->
+            <section id="blog">
+                <h2>Blog</h2>
+                <div id="posts">
+                    <!-- Aquí aparecerán las entradas del blog -->
+                </div>
+                <form id="blogForm">
+                    <h3>Añadir nueva entrada</h3>
+                    <input type="text" id="titulo" placeholder="Título" required><br>
+                    <textarea id="contenido" placeholder="Contenido de la entrada" required></textarea><br>
+                    <button type="submit">Añadir Entrada</button>
+                </form>
+            </section>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
